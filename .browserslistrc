@@ -1,0 +1,8 @@
+> 1%
+# 所有还被 node 基金会维护的 node 版本
+maintained node versions
+
+last 2 versions
+not dead
+#dead :通过last 2 versions筛选的浏览器版本中，全球使用率低于0.5%并且官方声明
+#不在维护或者事实上已经两年没有再更新的版本。目前符合条件的有 IE10,IE_Mob

@@ -1,0 +1,33 @@
+.DS_Store
+#末尾加/表示目录
+node_modules/
+# 只忽略根目录下dist文件，/dist/*表示忽略dist下的文件及文件夹，不包含dist文件夹本身
+/dist
+
+
+# local env files
+# 在所有的环境中被载入，但会被 git 忽略
+.env.local
+# 只在指定的模式中被载入，但会被 git 忽略
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package
+#如果你使用yarn并且不打算使用npm，则可以把package-lock.json列入.gitignore（比如Babel）；
+#反之如果你使用npm并且不打算使用yarn，则可以把yarn.lock列入.gitignore（比如TypeScript）。
+# package-lock.json
+yarn.lock
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

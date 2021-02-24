@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2015", //指定要使用的默认库
+    "module": "esnext", //生成模块代码时，指定模块系统，值为commonjs、amd、cmd、es6等
+    "baseUrl": "./", //用于解析非相对模块名称的基目录，值也可以是'.'
+    "paths": { //指定相对于baseUrl选项计算的路径映射
+      "@/*": ["src/*"],
+      "@c/*": ["src/components/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
