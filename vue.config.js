@@ -1,9 +1,9 @@
-const webpack = require('webpack')
-const path = require('path')
-const PACKAGE = require('./package.json')
-const resolve = dir => path.join(__dirname, dir)
+const webpack = require('webpack');
+const path = require('path');
+const PACKAGE = require('./package.json');
+const resolve = dir => path.join(__dirname, dir);
 
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   publicPath: isProduction ? '/my-project/' : '/',
@@ -39,19 +39,19 @@ module.exports = {
 
   // @see https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config/base.js
   chainWebpack: config => {
-    config.resolve.alias.set('@c', resolve('src/components'))
+    config.resolve.alias.set('@c', resolve('src/components'));
 
-    const hasHtml = config.plugins.has('html')
+    const hasHtml = config.plugins.has('html');
     if (hasHtml)
       config.plugin('html').tap(args => {
-        args[0].title = PACKAGE.name
-        return args
-      })
+        args[0].title = PACKAGE.name;
+        return args;
+      });
 
     // 修改针对 svg 的 loader (file-loader -> vue-svg-loader)
     // 当引入 svg 文件加入`?inline`后缀时, 会处理成 vue 组件
-    const svgRule = config.module.rule('svg')
-    svgRule.uses.clear()
+    const svgRule = config.module.rule('svg');
+    svgRule.uses.clear();
     svgRule
       .oneOf('inline')
       .resourceQuery(/inline/)
@@ -73,6 +73,6 @@ module.exports = {
       .loader('file-loader')
       .options({
         name: 'assets/svg/[name].[hash:8].[ext]',
-      })
+      });
   },
-}
+};

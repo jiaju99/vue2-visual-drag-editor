@@ -1,4 +1,4 @@
-# vue-project-template
+# vue2-visual-drag-editor
 
 ## Project setup
 ```
