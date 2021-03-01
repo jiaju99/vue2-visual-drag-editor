@@ -1,8 +1,6 @@
 <template>
-  <div class="container">
-    <header class="header">
-      <Toolbar />
-    </header>
+  <div class="editor-container">
+    <Toolbar class="toolbar-container" />
     <main>
       <section class="left">
         <ComponentList />
@@ -71,9 +69,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.container {
-  height: calc(100vh - 140px);
-  header {
+.editor-container {
+  height: 100%;
+  .toolbar-container {
     text-align: right;
   }
   main {

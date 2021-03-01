@@ -46,16 +46,16 @@ export default {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
   .container {
     width: calc(100% - 120px);
     height: calc(100% - 60px);
     margin-top: 64px;
     overflow: scroll;
-  }
-  .close {
-    position: absolute;
-    right: 20px;
-    top: 20px;
   }
 }
 </style>

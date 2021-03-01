@@ -8,7 +8,7 @@
     @cancel="close"
     @ok="close"
   >
-    <pre style="max-height: 400px; overflow-y: auto">{{ code }}</pre>
+    <pre class="code-wrap">{{ code }}</pre>
   </a-modal>
 </template>
 
@@ -32,3 +32,10 @@ export default {
   },
 };
 </script>
+
+<style lang="less" scoped>
+.code-wrap {
+  max-height: 400px;
+  overflow-y: auto;
+}
+</style>
