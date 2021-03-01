@@ -24,7 +24,7 @@ const store = new Vuex.Store({
       name: '',
       style: {
         width: 1396,
-        height: 560,
+        height: 660,
         backgroundColor: '#fff',
       },
       fieldsMap: {},

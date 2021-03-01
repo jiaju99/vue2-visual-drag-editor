@@ -77,7 +77,7 @@ export default {
     text-align: right;
   }
   main {
-    height: calc(100vh - 198px);
+    height: calc(100vh - 172px);
     border: 1px solid #1f1f1f;
     box-sizing: border-box;
     position: relative;
