@@ -6,7 +6,7 @@ const resolve = dir => path.join(__dirname, dir);
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  publicPath: isProduction ? '/my-project/' : '/',
+  publicPath: isProduction ? './' : '/',
   productionSourceMap: false,
 
   css: {

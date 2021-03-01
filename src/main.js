@@ -4,6 +4,11 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
+import moment from 'moment';
+import 'moment/locale/zh-cn';
+
+moment.locale('zh-cn');
+
 Vue.config.productionTip = false;
 // 开启后可观察组件性能
 Vue.config.performance = false;
